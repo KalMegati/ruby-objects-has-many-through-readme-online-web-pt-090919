@@ -23,7 +23,8 @@ class Waiter
   end
   
   def best_tipper
-    self.meals.sort[-1].customer
+    gratuity = self.meals.collect { |food| food.tip }
+    gratuity.sort[-1]
   end
   
 end
