@@ -4,7 +4,7 @@ class Waiter
   
   @@all = []
   
-  def initialize(waiter, customer, total, tip = 0)
+  def initialize(name, experience)
     
   end
   
