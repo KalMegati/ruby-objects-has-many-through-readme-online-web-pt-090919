@@ -5,7 +5,9 @@ class Customer
   @@all = []
   
   def initialize(name, age)
-    
+    @@all << self
+    self.name = name
+    self.age = age
   end
   
   def self.all
