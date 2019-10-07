@@ -15,7 +15,11 @@ class Customer
   end
   
   def new_meal(waiter, total, tip)
-    order = Meal.new()
+    Meal.new(waiter, self, total, tip)
+  end
+  
+  def meals
+    Meal.all.select { |food| food.customer }
   end
   
 end
