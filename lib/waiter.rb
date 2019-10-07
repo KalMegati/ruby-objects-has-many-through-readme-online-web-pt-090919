@@ -5,7 +5,9 @@ class Waiter
   @@all = []
   
   def initialize(name, experience)
-    
+    @@all << self
+    self.name = name
+    self.experience = experience
   end
   
   def self.all
