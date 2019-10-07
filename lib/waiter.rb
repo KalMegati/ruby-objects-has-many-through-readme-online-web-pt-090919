@@ -22,4 +22,8 @@ class Waiter
     Meal.all.select { |food| food.waiter == self }
   end
   
+  def best_tipper
+    
+  end
+  
 end
