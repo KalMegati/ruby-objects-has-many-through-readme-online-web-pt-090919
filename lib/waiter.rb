@@ -24,7 +24,6 @@ class Waiter
   
   def best_tipper
     gratuity = self.meals.collect { |food| food.tip }
-    gratuity.sort[-1]
   end
   
 end
